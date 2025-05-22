@@ -18,7 +18,19 @@
       font-family: sans-serif;
       background-color: #ffffff;
       display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 600px; /* Define o "encaixe" */
+      height: 100%;
+      display: flex;
       flex-direction: column;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
 
     header {
@@ -48,12 +60,14 @@
 </head>
 
 <body>
-  <header>
+  <div class="app-container">
+    <header>
+      <img src="Design sem nome.png" alt="Logo ALCI" />
+    </header>
 
-  </header>
-
-  <div id="chat-container">
-    <iframe src="https://copilotstudio.microsoft.com/environments/Default-64d34ddd-aff0-4d95-b7f1-0734a5c845e5/bots/cra5c_alci/webchat?__version__=2"></iframe>
+    <div id="chat-container">
+      <iframe src="https://copilotstudio.microsoft.com/environments/Default-64d34ddd-aff0-4d95-b7f1-0734a5c845e5/bots/cra5c_alci/webchat?__version__=2"></iframe>
+    </div>
   </div>
 </body>
 </html>
